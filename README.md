@@ -1,6 +1,11 @@
 # Make Wire Great Again
 
 
+## Features
+- Disables all outgoing pings
+- Disables all outgoing calls
+
+
 ## Getting Started
 There are multiple ways to import the project into Android Studio, but this seems to be the easiest.
 
@@ -12,9 +17,7 @@ There are multiple ways to import the project into Android Studio, but this seem
 
 
 ## TODO
-- ~~Disable the ping button~~
-- ~~Disable the call button~~
-- Update MainActivity to include buttons to allow the above features to be quickly toggled on/off
+- Update UI to include buttons that allow the user to toggle features on/off
 - Configure Travis-CI builds
 - Disable incoming pings
 - Disable incoming calls
