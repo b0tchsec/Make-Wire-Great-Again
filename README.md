@@ -13,6 +13,6 @@ There are multiple ways to import the project into Android Studio, but this seem
 
 ## TODO
 - Disable the ping button
-- Disable the call button
+- ~~Disable the call button~~
 - Update MainActivity to include buttons to allow the above features to be quickly toggled on/off
 - Configure Travis-CI builds
