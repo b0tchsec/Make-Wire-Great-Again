@@ -16,3 +16,6 @@ There are multiple ways to import the project into Android Studio, but this seem
 - ~~Disable the call button~~
 - Update MainActivity to include buttons to allow the above features to be quickly toggled on/off
 - Configure Travis-CI builds
+- Disable incoming pings
+- Disable incoming calls
+- Allow the user to selectively block calls/pings for each conversation
