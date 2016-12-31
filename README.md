@@ -7,6 +7,14 @@
 
 
 ## Getting Started
+
+### Install precompiled APK
+Copy or download the [latest apk](https://github.com/b0tchsec/Make-Wire-Great-Again/releases/download/0.1/MakeWireGreatAgain-XposedMod-v0.1.apk) to your Android phone.
+
+Use your preferred Android filebrowser to navigate to the APK and install.
+
+### Compile from source
+
 There are multiple ways to import the project into Android Studio, but this seems to be the easiest.
 
 - Clone this repo to the folder of your choice.
