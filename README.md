@@ -30,6 +30,8 @@ There are multiple ways to import the project into Android Studio, but this seem
 - Disable incoming pings
 - Disable incoming calls
 - Allow the user to selectively block calls/pings for each conversation
+- Instead of blocking pings/calls altogether, generate a pop-up asking for confirmation before sending the ping/call.
+
 
 ## License
 
