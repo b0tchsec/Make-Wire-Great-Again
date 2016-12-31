@@ -13,11 +13,20 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 public class WireApp implements IXposedHookLoadPackage {
 
-    // Replace method startCall() method
+    // Replace startCall() method
     private XC_MethodReplacement startcall_hook = new XC_MethodReplacement() {
         @Override
         protected Object replaceHookedMethod(MethodHookParam param) throws Throwable {
             XposedBridge.log("You tried to call someone, I prevented that for you...");
+            return null;
+        }
+    };
+
+    // Replace knock() method
+    private XC_MethodReplacement knock_hook = new XC_MethodReplacement() {
+        @Override
+        protected Object replaceHookedMethod(MethodHookParam param) throws Throwable {
+            XposedBridge.log("You tried to ping someone, I prevented that for you...");
             return null;
         }
     };
@@ -30,6 +39,10 @@ public class WireApp implements IXposedHookLoadPackage {
         findAndHookMethod("com.waz.zclient.controllers.calling.CallingController", lpparam.classLoader,
                 "startCall", boolean.class,
                 startcall_hook);
+
+        // Hook the method, void knock()
+        findAndHookMethod("com.waz.api.impl.conversation.BaseConversation", lpparam.classLoader,
+                "knock", knock_hook);
 
         XposedBridge.log("We are hooked into WireApp, time to make it great again!");
     }
